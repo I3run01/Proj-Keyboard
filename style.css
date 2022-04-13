@@ -1,5 +1,6 @@
 @charset "UTF-08";
 
+
 body {
     margin: 0;
 }
@@ -9,27 +10,114 @@ main {
 }
 
 #sc01 {
-    height: 70vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+#sc01 article {
+    width: 80vw;
+    margin: 10vh;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+#sc01 article>h1 {
+    margin: 2vh;
+    border-bottom: 1px solid black;
 }
 
 #sc02 {
-    height: 30vh;
+    height: 40vh;
     background-color: rgb(0, 84, 87);
+    font-size: 2.9vw;
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: green;
-    max-width: 98vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: 
+    "Div1-0 Div1-0 Div1-0 Div1-0 Div1-0"
+    "qpDiv qpDiv qpDiv qpDiv qpDiv"
+    "alDiv alDiv alDiv alDiv alDiv"
+    "shiftDiv zmDiv zmDiv zmDiv eraserDiv"
+    "Divint commaDiv spaceDiv dotDiv enterDiv"
+    ;
+
+    width: 95vw;
     margin: auto;
+    grid-gap: 1vw;
 }
 
 .valueb {
-    width: 7vw;
-    height: 4vh;
-    margin: 0.1vw;
+    width: 8.8vw;
+    height: 6vh;
+}
 
+.empty {
+    width: 4.20vw;
+    height: 6vh;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.special  {
+    width: 13.5vw;
+    height: 6vh;
+    
+}
+
+.space {
+    width: 45vw;
+    height: 6vh;
+}
+
+#Div1-0 {
+    grid-area: Div1-0;
+}
+
+#qpDiv {
+    grid-area: qpDiv;
+}
+
+#eraserDiv {
+    grid-area: eraserDiv;
+}
+
+#fixDiv {
+    grid-area: fixDiv;
+    display: none;
+}
+
+#alDiv {
+    grid-area: alDiv;
+    display: flex;
+    justify-content: space-between;
+}
+
+#zmDiv {
+    grid-area: zmDiv;
+}
+
+#enterDiv {
+    grid-area: enterDiv;
+}
+
+#shiftDiv {
+    grid-area: shiftDiv;
+}
+#commaDiv {
+    grid-area: commaDiv;
+}
+
+#dotDiv {
+    grid-area: dotDiv;
+}
+
+#Divint {
+    grid-area: Divint;
+}
+
+#spaceDiv {
+    grid-area: spaceDiv;
 }
