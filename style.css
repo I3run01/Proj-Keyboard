@@ -12,7 +12,11 @@ main {
 #sc01 {
     height: 37.7vh;
     background-color: rgb(255, 255, 255);
+}
 
+#sc01 p {
+    font-size: 1.2em;
+    padding: 2vh;
 
 }
 
@@ -28,7 +32,7 @@ main {
 #text02 {
     text-align: center;
     padding-top: 2vh;
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin: auto;
     white-space: nowrap;
     overflow-x: scroll;
@@ -43,6 +47,7 @@ main {
 #sc02M > button {
     width: 12vw;
     height: 4vh;
+    background-color: rgba(127, 255, 212, 0.544);
 }
 
 #sc01 article {
