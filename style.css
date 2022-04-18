@@ -10,8 +10,8 @@ main {
 }
 
 #sc01 {
-    height: 37.7vh;
     background-color: rgb(255, 255, 255);
+    min-height: 38vh;
 }
 
 #sc01 p {
@@ -20,19 +20,34 @@ main {
 
 }
 
+#sc01 article {
+    width: 80vw;
+    margin: 8vh auto auto auto;
+    text-align: center;
+    border: 1px solid black;
+   
+
+}
+
+#sc01 article>h1 {
+    margin: 2vh;
+    border-bottom: 1px solid black;
+}
+
 #sc02M {
     padding: 2vh;
     background-color: rgb(243, 243, 189);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
 #text02 {
     text-align: center;
     padding-top: 2vh;
-    font-size: 1.3em;
+    
     margin: auto;
     white-space: nowrap;
     overflow-x: scroll;
@@ -45,24 +60,13 @@ main {
 }
 
 #sc02M > button {
-    width: 12vw;
-    height: 4vh;
+    min-width: 12vw;
+    height: 6vh;
     background-color: rgba(127, 255, 212, 0.544);
+    font-size: 4vh;
 }
 
-#sc01 article {
-    width: 80vw;
-    margin: 10vh;
-    text-align: center;
-    border: 1px solid black;
-   
 
-}
-
-#sc01 article>h1 {
-    margin: 2vh;
-    border-bottom: 1px solid black;
-}
 
 #sc02 {
     height: 40vh;
