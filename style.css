@@ -47,14 +47,12 @@ main {
 #text02 {
     text-align: center;
     padding-top: 2vh;
-    
     margin: auto;
-    white-space: nowrap;
-    overflow-x: scroll;
     width: 70vw;
     border: 1px solid black;
     height: 6vh;
     background-color: white;
+    overflow-y: scroll;
     
     
 }
