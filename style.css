@@ -118,6 +118,8 @@ main {
 
 #Div1-0 {
     grid-area: Div1-0;
+    display: flex;
+    justify-content: start;
 }
 
 #qpDiv {
@@ -166,12 +168,14 @@ main {
     grid-area: spaceDiv;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
+
     #container {
-        max-width: 1000px;
-        grid-gap: 10px;
+        max-width: 800px;
+        padding: 20px;
+        grid-gap: 0;
         background-color: red;
-        grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(5, auto);
         grid-template-areas: 
         "Div1-0 Div1-0 Div1-0 Div1-0 eraserDiv"
         "qpDiv qpDiv qpDiv qpDiv qpDiv"
@@ -182,19 +186,21 @@ main {
         ;
     }
 
-    .valueb {
-        width: 20px;
-        height: 50px;
+    .valueb, .special  {
+        width: 60px;
+        height: 60px;
+        margin: 2px 5px 2px 5px;
+
     }
 
-    .special  {
-        width: 100px;
-        height: 50px;
-        
-    }
 
     #fixDiv {
         grid-area: fixDiv;
         display: block;
+    }
+
+    .space {
+        width: 100px;
+        height: 60px;
     }
 }
