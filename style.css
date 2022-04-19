@@ -76,7 +76,7 @@ main {
 
 
 #container {
-    padding-top: 3vh;
+    padding-top: 2vh;
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-areas: 
@@ -87,7 +87,7 @@ main {
     "Divint commaDiv spaceDiv dotDiv enterDiv"
     ;
 
-    width: 95vw;
+    width: 90vw;
     margin: auto;
     grid-gap: 0;
 }
@@ -105,7 +105,7 @@ main {
 }
 
 .special  {
-    width: 13.5vw;
+    width: 13vw;
     height: 6vh;
     margin: 0.2vw ;
 }
