@@ -78,7 +78,7 @@ main {
 #container {
     padding-top: 3vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-columns: repeat(5, auto);
     grid-template-areas: 
     "Div1-0 Div1-0 Div1-0 Div1-0 Div1-0"
     "qpDiv qpDiv qpDiv qpDiv qpDiv"
@@ -89,15 +89,16 @@ main {
 
     width: 95vw;
     margin: auto;
-    grid-gap: 1vw;
+    grid-gap: 0;
 }
 
 .valueb {
     width: 8.8vw;
     height: 6vh;
+    margin: 0.2vw ;
 }
 
-.empty {
+#empty {
     width: 4.20vw;
     height: 6vh;
     background-color: rgba(0, 0, 255, 0);
@@ -106,24 +107,29 @@ main {
 .special  {
     width: 13.5vw;
     height: 6vh;
-    
+    margin: 0.2vw ;
 }
 
 .space {
     width: 46.5vw;
     height: 6vh;
+    margin: 0.2vw ;
 }
 
 
 
 #Div1-0 {
     grid-area: Div1-0;
+    display: flex;
+    justify-content: center;
 
 
 }
 
 #qpDiv {
     grid-area: qpDiv;
+    display: flex;
+    justify-content: center;
 }
 
 #eraserDiv {
@@ -138,34 +144,50 @@ main {
 #alDiv {
     grid-area: alDiv;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+   
 }
 
 #zmDiv {
     grid-area: zmDiv;
+    display: flex;
+    justify-content: center;
 }
 
 #enterDiv {
     grid-area: enterDiv;
+    display: flex;
+    justify-content: center;
 }
 
 #shiftDiv {
     grid-area: shiftDiv;
+    display: flex;
+    justify-content: center;
 }
 #commaDiv {
     grid-area: commaDiv;
+    display: flex;
+    justify-content: center;
 }
 
 #dotDiv {
     grid-area: dotDiv;
+    display: flex;
+    justify-content: center;
 }
 
 #Divint {
     grid-area: Divint;
+    display: flex;
+    justify-content: center;
 }
 
 #spaceDiv {
     grid-area: spaceDiv;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -182,7 +204,6 @@ main {
         "fixDiv alDiv alDiv alDiv enterDiv"
         "shiftDiv zmDiv commaDiv  dotDiv Divint"
         "spaceDiv spaceDiv spaceDiv spaceDiv spaceDiv"
-
         ;
     }
 
