@@ -35,6 +35,7 @@ main {
 }
 
 #sc02M {
+    font-size: 4vh;
     padding: 2vh;
     background-color: rgb(243, 243, 189);
     display: flex;
