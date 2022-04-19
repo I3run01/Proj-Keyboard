@@ -114,6 +114,8 @@ main {
     height: 6vh;
 }
 
+
+
 #Div1-0 {
     grid-area: Div1-0;
 }
@@ -162,4 +164,37 @@ main {
 
 #spaceDiv {
     grid-area: spaceDiv;
+}
+
+@media screen and (min-width: 800px) {
+    #container {
+        max-width: 1000px;
+        grid-gap: 10px;
+        background-color: red;
+        grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "Div1-0 Div1-0 Div1-0 Div1-0 eraserDiv"
+        "qpDiv qpDiv qpDiv qpDiv qpDiv"
+        "fixDiv alDiv alDiv alDiv enterDiv"
+        "shiftDiv zmDiv commaDiv  dotDiv Divint"
+        "spaceDiv spaceDiv spaceDiv spaceDiv spaceDiv"
+
+        ;
+    }
+
+    .valueb {
+        width: 20px;
+        height: 50px;
+    }
+
+    .special  {
+        width: 100px;
+        height: 50px;
+        
+    }
+
+    #fixDiv {
+        grid-area: fixDiv;
+        display: block;
+    }
 }
