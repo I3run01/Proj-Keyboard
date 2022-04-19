@@ -188,7 +188,7 @@ main {
 
     #container {
         max-width: 800px;
-        padding: 20px;
+        padding: 5px;
         grid-gap: 0;
         background-color: red;
         grid-template-columns: repeat(5, auto);
@@ -199,13 +199,22 @@ main {
         "shiftDiv zmDiv commaDiv  dotDiv Divint"
         "spaceDiv spaceDiv spaceDiv spaceDiv spaceDiv"
         ;
+
     }
 
     .valueb, .special  {
-        width: 60px;
+        width: 69px;
         height: 60px;
-        margin: 2px 5px 2px 5px;
+        margin: 2px;
 
+        font-size: 1.5em;
+
+    }
+
+    .space {
+        width: 520px;
+        height: 60px;
+        font-size: 1.5em;
     }
 
 
@@ -214,8 +223,5 @@ main {
         display: block;
     }
 
-    .space {
-        width: 100px;
-        height: 60px;
-    }
+    
 }
