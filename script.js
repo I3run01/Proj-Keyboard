@@ -1,9 +1,9 @@
 function text(value) {
-    if(value == 'Eraser') text01 = text01.slice(0, length-1)
-    else if (value == 'enter') text01 += ' <br> '
+    if(value == '⬅') text01 = text01.slice(0, length-1)
+    else if (value == '↵') text01 += ' <br> '
     else if (value == 'space') text01 += ' '
-    else if (value == 'shift') Upper.fixTemporaryUpper = true
-    else if (value == 'fixDiv') {
+    else if (value == '⬆') Upper.fixTemporaryUpper = true
+    else if (value == 'fixa') {
         if (Upper.fixUpper == true) Upper.fixUpper = false
         else Upper.fixUpper = true
     }
