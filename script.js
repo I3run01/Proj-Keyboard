@@ -1,7 +1,7 @@
 function text(value) {
     if(value == '⬅') text01 = text01.slice(0, length-1)
     else if (value == '↵') text01 += ' <br> '
-    else if (value == 'space') text01 += ' '
+    else if (value == '⎵') text01 += ' '
     else if (value == '⬆') Upper.fixTemporaryUpper = true
     else if (value == 'fixa') {
         if (Upper.fixUpper == true) Upper.fixUpper = false
