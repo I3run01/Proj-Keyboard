@@ -188,14 +188,26 @@ main {
         height: 100px;
     }
 
+    #text02 {
+        margin: 2px auto auto auto;
+        height: 80px;
+    }
+
+    
+    #sc02M > button {
+        height: 60px;
+        font-size: 36px;
+    }
+
     #sc02 {
-        height: 380px;
+        min-height: 360px;
     }
 
     #container {
         max-width: 800px;
         padding: 20px 5px 5px 5px;
         grid-gap: 0px;
+
         grid-template-columns: repeat(5, auto);
         grid-template-areas: 
         "Div1-0 Div1-0 Div1-0 Div1-0 eraserDiv"
