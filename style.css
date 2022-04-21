@@ -11,7 +11,7 @@ main {
 
 #sc01 {
     background-color: rgb(255, 255, 255);
-    min-height: 40vh;
+    min-height: 39.6vh;
 }
 
 #sc01 p {
@@ -185,7 +185,7 @@ main {
 @media screen and (min-width: 900px) {
 
     #sc01 {
-        min-height: 420px;
+        min-height: 450px;
     }
 
     #sc02M {
