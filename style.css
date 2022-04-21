@@ -184,6 +184,10 @@ main {
 
 @media screen and (min-width: 900px) {
 
+    #sc01 {
+        min-height: 420px;
+    }
+
     #sc02M {
         height: 100px;
     }
